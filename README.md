@@ -1,15 +1,15 @@
 
 # Project: Analyzing Macbeth
 
-For our first day and first data science project, we're going to do some rudimentry analysis of Shakespeare's classic play: Macbeth!
+## Introduction
+For our first day and first data science project, we're going to do some rudimentry analysis of Shakespeare's classic play: Macbeth! You will get practice working with lists, condtionals and dictionaries, visualizing data, and thinking analytically about data.
 
 ## Objectives
-* Practice working with lists, condtionals and dictionaries
-* Practice visualizing data
-* Practice thinking analytically concerning data
+You will be able to:
+* Show mastery of the content covered in this section
 
 ### Getting the Data
-Here we briefly import a python package and use it to pull the transcript of Macbeth from the project Gutenberg website. We also preview a few details about what is now stored in the variable macbeth; it's a string with 119,846 characters, the first 500 of which are printed below. 
+Here we start by importing a python package and using it to pull the transcript of Macbeth from the project Gutenberg website. We also preview a few details about what is now stored in the variable macbeth; it's a string with 119,846 characters, the first 500 of which are printed below. 
 
 
 ```python
@@ -35,7 +35,7 @@ print(macbeth[:500])
     Please take a look at the important information in this header.
     We encourage you to keep this file on your own disk, keeping an
     electronic path open for the nex
-    
+
 
 ### Your Task
 
@@ -57,7 +57,8 @@ A common python programming pattern to counting objects, produce histograms, or 
 # Include descriptive titles and labels
 ```
 
-### Optional Extensions
+### Level Up (Optional)
+This project should take you about an hour and a half to complete. If you're done much more quickly than that and are not behind in the course, feel free to deepen your knowledge by completing any or all of the following tasks until you run out of time:
 * Create a list of top characters by mentions of their names 
 * Split the text by which character is talking
 * Create sub graphs of the most common words by character
