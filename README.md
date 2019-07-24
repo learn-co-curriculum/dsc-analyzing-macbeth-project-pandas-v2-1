@@ -2,7 +2,7 @@
 # Project: Analyzing Macbeth
 
 ## Introduction
-For our first day and first data science project, we're going to do some rudimentry analysis of Shakespeare's classic play: Macbeth! You will get practice working with lists, condtionals and dictionaries, visualizing data, and thinking analytically about data.
+Now we're going to do some rudimentry analysis of Shakespeare's classic play: Macbeth! You will get practice working with lists, condtionals and dictionaries, visualizing data, and thinking analytically about data.
 
 ## Objectives
 You will be able to:
