@@ -1,15 +1,14 @@
 
 # Project: Analyzing Macbeth
 
-For our first day and first data science project, we're going to do some rudimentry analysis of Shakespeare's classic play: Macbeth!
+For our first day and first data science project, we're going to do some rudimentry analysis of Shakespeare's classic play: Macbeth! You will get practice working with lists, condtionals and dictionaries, visualizing data, and thinking analytically about data.
 
 ## Objectives
-* Practice working with lists, condtionals and dictionaries
-* Practice visualizing data
-* Practice thinking analytically concerning data
+You will be able to:
+* Show mastery of the content covered in this section
 
 ### Getting the Data
-Here we briefly import a python package and use it to pull the transcript of Macbeth from the project Gutenberg website. We also preview a few details about what is now stored in the variable macbeth; it's a string with 119,846 characters, the first 500 of which are printed below. 
+Here we start by importing a python package and using it to pull the transcript of Macbeth from the project Gutenberg website. We also preview a few details about what is now stored in the variable macbeth; it's a string with 119,846 characters, the first 500 of which are printed below.
 
 
 ```python
@@ -39,10 +38,9 @@ print(macbeth[:500])
 
 ### Your Task
 
-Your task is to create a bar graph of the 25 most common words in the Shakespeare's Macbeth.  
+Your task is to create a bar graph of the 25 most common words in Shakespeare's Macbeth.
 
-
-A common python programming pattern to counting objects, produce histograms, or update statistics is to make calls to a dictionary as you iterate through a list. For example, given a list of words, you can create a dictionary to store counts and then iterate through the list of words, checking how many times each word has appeared using your dictionary, and updating the dictionary count now that you've seen that word again. The `dictionary.get()` method is very useful in doing this. Read the docstring for the dictionary.get() method and use it along with the pseudocode above to create a bar graph of the 25 most common words from the transcript of Macbeth which has been loaded into a variable 'Macbeth'. Be sure to include a title and appropriate labels for your graph.
+A common python programming pattern to counting objects, produce histograms, or update statistics is to make calls to a dictionary as you iterate through a list. For example, given a list of words, you can create a dictionary to store counts and then iterate through the list of words, checking how many times each word has appeared using your dictionary, and updating the dictionary count now that you've seen that word again. The dictionary.get() method is very useful in doing this. Read the docstring for the dictionary.get() method and use it along with the pseudocode above to create a bar graph of the 25 most common words from the transcript of Macbeth which has been loaded into a variable 'Macbeth'. Be sure to include a title and appropriate labels for your graph.
 
 
 ```python
@@ -85,7 +83,7 @@ plt.xlabel('Number of Occurences')
 
 
 
-![png](index_files/index_6_1.png)
+![png](index_files/index_4_1.png)
 
 
 
@@ -111,13 +109,13 @@ plt.title('Top 25 Words in Macbeth')
 
 
 
-![png](index_files/index_7_1.png)
+![png](index_files/index_5_1.png)
 
 
-### Optional Extensions
+### Level Up (Optional)
 * Create a list of top characters by mentions of their names 
 * Split the text by which character is talking
-* Create sub graphs of the most common words by character
+* Create subgraphs of the most common words by character
 * Reduce the string to the text of the play itself. (Remove any initial notes, forward, introduction, appendix, etc.)
 * Come up with some other fun analyses of the text!
 
