@@ -1,15 +1,17 @@
 
-# Project: Analyzing Macbeth
+# Project: Analyzing Macbeth Using Pandas
 
 ## Introduction
-Now we're going to do some rudimentry analysis of Shakespeare's classic play: Macbeth! You will get practice working with lists and dictionaries, condtionals, visualizing data, and thinking analytically about data.
+Now, we're going to revisit our rudimentary analysis of Shakespeare's classic play: Macbeth. This time around, you will use Pandas to generate the plot of the 25 most common words in Macbeth. You'll spend a lot time learning about Pandas later, but for now just try to explore and play with Pandas on your own. You might find the [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/) helpful here and, as always, remember that Google is your friend if you get stuck.  
 
 ## Objectives
 You will be able to:
-* Show mastery of the content covered in this section
+* Apply string methods to make changes to a string
+* Use a `for` loop to iterate over a collection
+* Assign values in a dictionary
 
 ## Getting the Data
-Here we start by importing a Python package and using it to pull the transcript of Macbeth from the project Gutenberg website. We also preview a few details about what is now stored in the variable macbeth; it's a string with 119,846 characters, the first 500 of which are printed below. 
+Here we start by importing a Python package called `requests`. We'll use it to pull the transcript of Macbeth from the [Project Gutenberg](https://www.gutenberg.org/) website. We'll also preview a few details about what is now stored in the variable `macbeth`. As you can see, it's a string with 120,253 characters - the first 500 of which are printed below. 
 
 
 ```python
@@ -22,19 +24,20 @@ print(macbeth[:500])
 ```
 
     <class 'str'>
-    119846
-    ﻿***The Project Gutenberg's Etext of Shakespeare's First Folio***
+    120253
+    ﻿
+    
+    ***The Project Gutenberg's Etext of Shakespeare's First Folio***
     ********************The Tragedie of Macbeth*********************
     
-    This is our 3rd edition of most of these plays.  See the index.
     
     
-    Copyright laws are changing all over the world, be sure to check
-    the copyright laws for your country before posting these files!!
-    
-    Please take a look at the important information in this header.
-    We encourage you to keep this file on your own disk, keeping an
-    electronic path open for the nex
+    *******************************************************************
+    THIS EBOOK WAS ONE OF PROJECT GUTENBERG'S EARLY FILES PRODUCED AT A
+    TIME WHEN PROOFING METHODS AND TOOLS WERE NOT WELL DEVELOPED. THERE
+    IS AN IMPROVED EDITION OF THIS TITLE WHICH MAY BE VIEWED AS EBOOK
+    (#1533) at https://www.gutenberg.org/ebooks/1533
+    *********************************
 
 
 ## Your Task
@@ -43,6 +46,8 @@ Your task is to create a bar graph of the 25 most common words in Shakespeare's 
 
 
 A common Python programming pattern to count objects, produce histograms, or update statistics is to make calls to a dictionary as you iterate through a list. For example, given a list of words, you can create a dictionary to store counts and then iterate through the list of words, checking how many times each word has appeared using your dictionary, and updating the dictionary count now that you've seen that word again. The `.get()` method of dictionary is very useful in doing this. Read the docstring for the `.get()` method and use it along with the pseudocode below to create a bar graph of the 25 most common words from the transcript of Macbeth which has been loaded into the variable 'macbeth'. Be sure to include a title and appropriate labels for your graph.
+
+To get the 25 *most common* words, you will have to sort your counts. You might find the Pandas `sort_values()` method helpful here. Check out the [documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html) for more information.
 
 
 ```python
@@ -59,12 +64,13 @@ import matplotlib.pyplot as plt
 # Create a dictionary
 # Iterate through the text of Macbeth
 # Update word counts
+# Sort words by counts in descending order
 # Create Bar Graph
 # Include descriptive titles and labels
 ```
 
 ## Level Up (Optional)
-This project should take you about an hour and a half to complete. If you're done much more quickly than that and are not behind in the course, feel free to deepen your knowledge by completing any or all of the following tasks until you run out of time:
+If you want to explore Pandas even more, feel free to deepen your knowledge by completing any or all of the following tasks until you run out of time:
 * Create a list of top characters by mentions of their names 
 * Split the text by which character is talking
 * Create subgraphs of the most common words by character
@@ -72,4 +78,4 @@ This project should take you about an hour and a half to complete. If you're don
 * Come up with some other fun analyses of the text!
 
 ## Summary
-Congratulations! You've got some extra practice combining various data types into useful programming patterns and done an initial analysis of a classic text!
+Congratulations! You've got some extra practice combining various data types into useful programming patterns and done an initial analysis of a classic text using Pandas!
