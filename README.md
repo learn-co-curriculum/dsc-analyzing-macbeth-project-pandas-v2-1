@@ -1,14 +1,13 @@
-
 # Project: Analyzing Macbeth Using Pandas
 
 ## Introduction
 Now, we're going to revisit our rudimentary analysis of Shakespeare's classic play: Macbeth. This time around, you will use Pandas to generate the plot of the 25 most common words in Macbeth. You'll spend a lot time learning about Pandas later, but for now just try to explore and play with Pandas on your own. You might find the [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/) helpful here and, as always, remember that Google is your friend if you get stuck.  
 
-## Objectives
+## Objectives  
 You will be able to:
-* Apply string methods to make changes to a string
-* Use a `for` loop to iterate over a collection
-* Assign values in a dictionary
+- Apply string methods to make changes to a string  
+- Use a `for` loop to iterate over a collection  
+- Assign values in a dictionary  
 
 ## Getting the Data
 Here we start by importing a Python package called `requests`. We'll use it to pull the transcript of Macbeth from the [Project Gutenberg](https://www.gutenberg.org/) website. We'll also preview a few details about what is now stored in the variable `macbeth`. As you can see, it's a string with 120,253 characters - the first 500 of which are printed below. 
